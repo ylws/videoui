@@ -9,11 +9,11 @@ this is the plugin for video ui by js
  * 邮箱：474569696@qq.com
  * 日期：2016/7/22
  * new DJLVideoPlay({
-		"father": "videopart",//父容器
-		"id": "myVideo",//视频id
-		"videoPart": ["tag", "body", 0], //type,class/id,index
-		"liveStreams":"http://www.w3cschool.cc/try/demo_source/mov_bbb.mp4",//视频路径
-	})
+ *	"father": "videopart",//父容器
+ *		"id": "myVideo",//视频id
+ *		"videoPart": ["tag", "body", 0], //type,class/id,index
+ *		"liveStreams":"http://www.w3cschool.cc/try/demo_source/mov_bbb.mp4",//视频路径
+ *	})
  *});
  *备注：如有疑问，请邮件联系
  */
