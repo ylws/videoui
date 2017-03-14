@@ -1,0 +1,245 @@
+HTML, body, div, h1, h2, h3, h4, h5, h6, ul, ol, dl, li, dt, dd, p, blockquote,
+pre, form, fieldset, table, th, td {
+    border:none;
+    color: #333;
+    font-family:"Microsoft yahei","Tahoma","Verdana","Arial","sans-serif";
+    font-size:14px;
+    margin:0px;
+    outline: none;
+    padding:0px;
+     -webkit-tap-highlight-color:rgba(255,255,255,0);
+    }
+.videopart {
+			background: #000;
+			float: left;
+			height: 100%;
+			overflow: hidden;
+			position: relative;
+			width: 100%;
+		}
+		
+		.videopart video {
+			height: 100;
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			z-index: 1;
+		}
+		
+		.videopart .control {
+			background:#666;
+			bottom: 0;
+			height: 50px;
+			left: 0;
+			position: absolute;
+			width: 100%;
+			z-index: 20;
+		}
+		
+		.videopart .play,
+		.videopart .pause {
+			background: url(../images/play.png) 3px 0px no-repeat;
+			cursor: pointer;
+			float: left;
+			height: 33px;
+			margin-top: 10px;
+			width: 40px;
+		}
+		
+		.videopart .pause {
+			background: url(../images/play.png) 3px -35px no-repeat;
+			display: none;
+		}
+		
+		.videopart .fullscreen,
+		.videopart .volum,
+		.videopart .totaltime {
+			cursor: pointer;
+			float: right;
+			height: 33px;
+			position: relative;
+			width: 40px;
+		}
+		.videopart .fullscreen {
+			background: url(../images/play.png) 8px -74px no-repeat;
+			margin-top: 10px;
+		}
+		
+		.videopart .volum {
+			background: url(../images/play.png) 8px -166px no-repeat;
+			margin-top: 10px;
+		}
+		
+		.videopart .totaltime {
+			float: left;
+			color: #fff;
+			font-size: 13px;
+			line-height: 15px;
+			margin: 20px 0 0 6px;
+			width: 60px;
+		}
+		
+		.videopart .control .scroll {
+			border-radius: 10px;
+			box-shadow:  0 0 0 1px #fff;
+			background: #666;
+			float: right;
+			height: 10px;
+			margin: 20px 0 0 6px;
+			position: relative;
+			width: 110px;
+			z-index: 2;
+		}
+		
+		.videopart .control .scroll .scrollson,
+		.videopart .control .scroll .scrollsonbg,
+		.videopart .control .scroll .scrollsonval {
+			border-radius: 50%;
+			/*box-shadow:  0 0 0 1px #fff;*/
+			background: #008dcf;
+			height: 10px;
+			position: absolute;
+			width: 10px;
+			z-index: 2;
+		}
+		.videopart .control .scroll .scrollson{
+			box-shadow: 0 0 0 1px #fff;
+			cursor:default;
+		}
+		.videopart .control .scroll .scrollsonbg {
+			border-radius: 10px  0 0 10px;
+			background: #008dcf;
+			height: 10px;
+			left: 0;
+			z-index: 1;
+		}
+		
+		.videopart .control .scroll .scrollsonval {
+			top: -20px;
+			background: none;
+			display: none;
+			color: #ccc;
+		}
+		
+		.videopart .timeline{
+			float: left;
+			height: 7px;
+			position: absolute;
+			width: 100%;
+		}
+		
+		.videopart .playinbg,
+		.videopart .playin {
+			border-radius: 7px;
+			bottom: 0;
+			background: #fff;
+			height: 7px;
+			left: 0;
+			margin: auto;
+			position: absolute;
+			right: 0;
+			top: 0;
+			width: 100%;
+		}
+		
+		.videopart .playinbg {
+			background: #fff;
+		}
+		.videopart .playinbg div{
+			border:1px solid #FF0000;
+			height: 3px;
+			position: absolute;
+			top: 1px;
+			width: 3px;
+			z-index: 2;
+		}
+		.videopart .playinbg div img{
+			float: left;
+			height: 0px;
+			position: relative;
+			width: 0px;
+		}
+		.videopart .playin {
+			background: #008dcf;
+			left: 0;
+			position: absolute;
+			margin: auto 0;
+			width: 0;
+			z-index: 2;
+		}
+		.videopart .playin:after{
+			box-shadow: 0 0 0 1px #fff;
+			background: #008dcf;
+			border-radius: 50%;
+			content: "";
+			height: 10px;
+			position: absolute;
+			right: 0px;
+			top: -2px;
+			width: 10px;
+		}
+		.videopart .nowtime {
+			color: #fff;
+			font-size: 13px;
+			float: left;
+			height: 13px;
+			line-height: 13px;
+			position: relative;
+			margin-top: 20px;
+			padding-right: 8px;
+			text-align: center;
+			width: 60px;
+		}
+		.videopart .nowtime:after{
+			content: "/";
+			position: absolute;
+			right: 0;
+		}
+		.videopart .playbtn {
+			background: url(../images/play.png)  0px -206px no-repeat;
+			border-radius: 50%;
+			bottom: 0;
+			height: 66px;
+			left: 0;
+			margin: auto;
+			position: absolute;
+			right: 0;
+			top: 0;
+			width: 66px;
+			z-index: 2;
+		}
+		
+		.videopart .modes {
+			background: #008dcf;
+			color: #fff;
+			float: right;
+			font-size: 14px;
+			height: 26px;
+			line-height: 26px;
+			margin-top: 14px;
+			margin-right: 3px;
+			position: relative;
+			text-align: center;
+			width: 54px;
+			z-index: 2;
+		}
+		
+		.videopart .modes div{
+			background: #008dcf;
+			color: #fff;
+			cursor: pointer;
+			font-size: 14px;
+			min-height: 26px;
+			line-height: 26px;
+			text-align: center;
+			width: 54px;
+		}
+		.videopart .modes .modellist{
+			float: left;
+			display: none;
+			left: 0;
+			position: absolute;
+			top: 0px;
+		}
+		
